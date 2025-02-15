@@ -7,6 +7,21 @@ import git from '@/assets/img/git.svg';
 import mySQL from '@/assets/img/mysql.svg';
 import vscode from '@/assets/img/vscode.svg';
 import avatar from '@/assets/profile/yanevannn.png';
+import Typed from 'typed.js';
+import { onMounted, ref } from 'vue';
+
+const typedElement = ref(null);
+
+onMounted(() => {
+  const typed = new Typed(typedElement.value, {
+    strings: [
+      "Hello, I'm Evan—a passionate Web Developer and Programmer from Bali, Indonesia. I specialize in building efficient, responsive, and user-friendly websites.",
+    ],
+    typeSpeed: 30,
+    backSpeed: 30,
+    loop: false,
+  });
+});
 
 </script>
 
@@ -14,14 +29,13 @@ import avatar from '@/assets/profile/yanevannn.png';
   <!-- HERO -->
   <section id="home" class="relative w-full min-h-screen flex items-center justify-center bg-gray-100 px-6">
     <div class="container mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-10">
-      <div class="flex items-center justify-center h-full order-2 lg:order-1">
+      <div class="flex items-center justify-center lg:justify-start h-full order-2 lg:order-1">
         <div class="text-center lg:text-left">
           <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight font-poppins">
             Web Developer <br /> & Tech Enthusiast
           </h3>
           <p class="mt-4 text-base sm:text-lg text-gray-600 font-mulish">
-            Hello, I'm Evan—a passionate Web Developer and Programmer from Bali, Indonesia.
-            I specialize in building efficient, responsive, and user-friendly websites.
+            <span ref="typedElement"></span>
           </p>
           <div class="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
             <img class="h-8 sm:h-10" :src="laravel" alt="Laravel" />
