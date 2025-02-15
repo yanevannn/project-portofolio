@@ -7,6 +7,7 @@ import git from '@/assets/img/git.svg';
 import mySQL from '@/assets/img/mysql.svg';
 import vscode from '@/assets/img/vscode.svg';
 import avatar from '@/assets/profile/yanevannn.png';
+import gcp from '@/assets/img/gcp.svg';
 import Typed from 'typed.js';
 import { onMounted, ref } from 'vue';
 
@@ -38,18 +39,19 @@ onMounted(() => {
             <span ref="typedElement"></span>
           </p>
           <div class="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
-            <img class="h-8 sm:h-10" :src="laravel" alt="Laravel" />
-            <img class="h-8 sm:h-10" :src="tailwindcss" alt="Tailwind CSS" />
-            <img class="h-8 sm:h-10" :src="nginx" alt="Nginx" />
-            <img class="h-8 sm:h-10" :src="nodejs" alt="Node.js" />
-            <img class="h-8 sm:h-10" :src="mySQL" alt="MySQL" />
-            <img class="h-8 sm:h-10" :src="git" alt="Git" />
-            <img class="h-8 sm:h-10" :src="vscode" alt="VS Code" />
+            <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="laravel" alt="Laravel" />
+            <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="tailwindcss" alt="Tailwind CSS" />
+            <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="nginx" alt="Nginx" />
+            <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="gcp" alt="Google Cloud Platform" />
+            <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="nodejs" alt="Node.js" />
+            <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="mySQL" alt="MySQL" />
+            <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="git" alt="Git" />
+            <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="vscode" alt="VS Code" />
           </div>
         </div>
       </div>
       <div class="flex items-center justify-center order-1 lg:order-2">
-        <div class="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden shadow-lg">
+        <div class="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden shadow-lg avatar-image">
           <img :src="avatar" alt="Photo Profile" class="max-w-full h-auto"/>
         </div>
       </div>
@@ -60,4 +62,34 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.avatar-image {
+    outline: 20px solid #c9c8c84d;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: morph 8s ease-in-out infinite 1s;
+    background-blend-mode: multiply;
+    box-shadow: inset 0px 0px 0px 18px #ffffff4d;
+}
+
+.avatar-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes morph {
+	 0% {
+		 border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+	 50% {
+		 border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
+	 100% {
+		 border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+}
 </style>
