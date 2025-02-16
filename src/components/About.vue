@@ -2,10 +2,10 @@
 </script>
 
 <template>
-    <div class="section px-6 h-screen flex items-center justify-center" id="about">
-        <div class="container mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <div class="section py-6 sm:py-0 px-6 min-h-screen flex items-center justify-center" id="about">
+        <div class="container mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-10">
             <div class="left flex items-center justify-center">
-                <div class="image relative">
+                <div class="image ">
                     <img src="https://cdn.prod.website-files.com/606a802fcaa89bc357508cad/6070b0658f4803368fde5a9e_freelance-web-developer-at-work.jpeg"
                         class="w-full h-auto rounded-xl" />
                 </div>
@@ -19,7 +19,7 @@
                     </h3>
                 </div>
                 <div class="text mt-4">
-                    <p class="text-base font-mulish text-gray-700 leading-relaxed text-justify">
+                    <p class="text-base sm:text-sm font-mulish text-gray-700 leading-relaxed text-justify">
                         I am a recent graduate from ITB STIKOM Bali with a degree in
                         Information Systems. Passionate about web development, I specialize
                         in building and managing scalable applications. My expertise
@@ -32,7 +32,7 @@
                         and contribute to innovative projects.
                     </p>
                 </div>
-                <div class="button mt-6">
+                <div class="button mt-6 ">
                     <a href="#"
                         class="bg-blue-500 hover:bg-blue-700 text-white font-poppins font-bold py-3 px-6 rounded-full transition duration-300 ">
                         Download CV
