@@ -1,10 +1,12 @@
 <script setup>
+import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
 import Hero from './components/Hero.vue'
 import MyFooter from './components/Footer.vue'
 </script>
 
 <template>
+  <Navbar />
   <Hero />
   <About />
   <MyFooter />
