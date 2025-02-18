@@ -30,7 +30,7 @@ onMounted(() => {
   <!-- HERO -->
   <section id="home" class="relative w-full min-h-screen flex items-center justify-center bg-gray-100 px-6">
     <div class="container mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-10">
-      <div class="flex items-center justify-center lg:justify-start h-full order-2 lg:order-1">
+      <div class="flex items-center justify-center lg:justify-start h-full order-2 lg:order-1" data-aos="fade-right" data-aos-duration="1000">
         <div class="text-center lg:text-left">
           <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight font-poppins">
             Web Developer <br /> & Tech Enthusiast
@@ -50,7 +50,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-center order-1 lg:order-2">
+      <div class="flex items-center justify-center order-1 lg:order-2" data-aos="fade-left" data-aos-duration="1000">
         <div class="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden shadow-lg avatar-image">
           <img :src="avatar" alt="Photo Profile" class="max-w-full h-auto"/>
         </div>

@@ -5,7 +5,7 @@ const year = new Date().getFullYear();
 </script>
 
 <template>
-    <footer class=" container mx-auto max-w-7xl py-6 px-6 border-t-2 border-gray-800">
+    <footer class=" container mx-auto max-w-7xl py-6 px-6 border-t-2 border-gray-800 text-sm">
 
         <div class="text-gray-800 text-center font-poppins">
             Crafted with <a href="https://vuejs.org/" target="_blank"><img :src="Vue" alt="Vue.JS"

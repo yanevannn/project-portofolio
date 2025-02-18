@@ -3,7 +3,7 @@
 
 <template>
     <div class="section py-6 sm:py-0 px-6 min-h-screen flex items-center justify-center" id="about">
-        <div class="container mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-10">
+        <div class="container mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-10" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">
             <div class="left flex items-center justify-center">
                 <div class="image ">
                     <img src="https://cdn.prod.website-files.com/606a802fcaa89bc357508cad/6070b0658f4803368fde5a9e_freelance-web-developer-at-work.jpeg"
