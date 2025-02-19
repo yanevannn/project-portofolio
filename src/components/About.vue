@@ -13,13 +13,13 @@
 
             <div class="right flex flex-col justify-center lg:pl-10">
                 <div class="title">
-                    <span class="text-xl font-semibold uppercase font-poppins text-gray-600">About Me</span>
+                    <span class="text-xl font-semibold font-poppins text-gray-600">About Me</span>
                     <h3 class="text-3xl font-bold font-poppins text-gray-900 leading-tight">
                         Web Developer: Eager to Learn & Contribute
                     </h3>
                 </div>
                 <div class="text mt-4">
-                    <p class="text-base sm:text-sm font-mulish text-gray-700 leading-relaxed text-justify">
+                    <p class="text-base font-mulish text-gray-700 leading-relaxed text-justify">
                         I am a recent graduate from ITB STIKOM Bali with a degree in
                         Information Systems. Passionate about web development, I specialize
                         in building and managing scalable applications. My expertise

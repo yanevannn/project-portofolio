@@ -14,15 +14,17 @@ import { onMounted, ref } from 'vue';
 const typedElement = ref(null);
 
 onMounted(() => {
-  // efek typing
-  const typed = new Typed(typedElement.value, {
-    strings: [
-      "Hello, I'm Evan—a passionate Web Developer and Programmer from Bali, Indonesia. I specialize in building efficient, responsive, and user-friendly websites.",
-    ],
-    typeSpeed: 30,
-    backSpeed: 30,
-    loop: false,
-  });
+  setTimeout(() => {
+    new Typed(typedElement.value, {
+      strings: [
+        "Hello, I'm Evan—a passionate Web Developer and Programmer from Bali, Indonesia. I specialize in building efficient, responsive, and user-friendly websites.",
+      ],
+      typeSpeed: 30,
+      backSpeed: 30,
+      loop: false,
+    });
+  }, 2000); // Delay 1.5 detik agar tidak bertabrakan dengan preloader
+
 });
 
 </script>
