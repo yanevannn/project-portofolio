@@ -14,6 +14,7 @@ import { onMounted, ref } from 'vue';
 const typedElement = ref(null);
 
 onMounted(() => {
+  // efek typing
   const typed = new Typed(typedElement.value, {
     strings: [
       "Hello, I'm Evan—a passionate Web Developer and Programmer from Bali, Indonesia. I specialize in building efficient, responsive, and user-friendly websites.",
@@ -70,7 +71,7 @@ onMounted(() => {
     right: 0;
     background-repeat: no-repeat;
     background-position: center;
-    animation: morph 8s ease-in-out infinite 1s;
+    animation: morph 8s ease-in-out infinite;
     background-blend-mode: multiply;
     box-shadow: inset 0px 0px 0px 18px #ffffff4d;
 }
