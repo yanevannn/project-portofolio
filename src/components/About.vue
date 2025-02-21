@@ -34,7 +34,7 @@
                 </div>
                 <div class="button mt-6 ">
                     <a href="#"
-                        class="bg-blue-500 hover:bg-blue-700 text-white font-poppins font-bold py-3 px-6 rounded-full transition duration-300 ">
+                        class="bg-gray-700 hover:bg-gray-800 text-white font-poppins font-bold py-3 px-6 rounded-full transition duration-300 ">
                         Download CV
                     </a>
                 </div>

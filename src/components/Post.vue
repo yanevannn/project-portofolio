@@ -29,8 +29,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="post" class="py-16 bg-gray-100 min-h-screen flex items-center justify-center">
-    <div class="container mx-auto px-6">
+  <section id="post" class="py-16 px-6 bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto max-w-7xl">
       <div class="text-left mb-12" data-aos="fade-right">
         <span class="text-xl font-semibold  font-poppins text-gray-600">DevScribe</span>
         <h3 class="text-3xl font-bold font-poppins text-gray-900 leading-tight w-full sm:w-1/2">Discover My Latest Coding Notes and Experiences</h3>
