@@ -12,7 +12,7 @@ const year = new Date().getFullYear();
                         class="inline h-4"></a>
                 by
                 <a href="https://github.com/yanevannn" target="_blank"
-                    class="font-semibold text-sky-600 hover:text-white underline underline-offset-3">Evan</a> |
+                    class="font-semibold text-gray-600 hover:text-gray-900 hover:font-bold hover:underline ">Evan</a> |
                 Copyright &copy; {{ year }}
             </div>
         </div>

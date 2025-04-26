@@ -1,4 +1,9 @@
 <script setup>
+import cv from "@/assets/document/cv-evan.pdf"
+function openCv() {
+  window.open(cv, "_blank");
+}
+import me from "@/assets/img/me.jpg";
 </script>
 
 <template>
@@ -6,8 +11,8 @@
         <div class="container mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-10" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">
             <div class="left flex items-center justify-center">
                 <div class="image ">
-                    <img src="https://cdn.prod.website-files.com/606a802fcaa89bc357508cad/6070b0658f4803368fde5a9e_freelance-web-developer-at-work.jpeg"
-                        class="w-full h-auto rounded-xl" />
+                    <img :src=me
+                        class="w-full h-auto rounded-xl hidden md:block" />
                 </div>
             </div>
 
@@ -17,6 +22,8 @@
                     <h3 class="text-3xl font-bold font-poppins text-gray-900 leading-tight">
                         Web Developer: Eager to Learn & Contribute
                     </h3>
+                    <img :src=me
+                    class="w-full h-auto rounded-xl block md:hidden my-5" />
                 </div>
                 <div class="text mt-4">
                     <p class="text-base font-mulish text-gray-700 leading-relaxed text-justify">
@@ -32,11 +39,9 @@
                         and contribute to innovative projects.
                     </p>
                 </div>
-                <div class="button mt-6 ">
-                    <a href="#"
-                        class="bg-gray-700 hover:bg-gray-800 text-white font-poppins font-bold py-3 px-6 rounded-full transition duration-300 ">
-                        Download CV
-                    </a>
+                <div class="button mt-6 flex gap-2">
+                  <button @click="openCv" class="bg-gray-700 hover:bg-gray-800 hover:shadow-md  text-white font-poppins font-semibold py-2 px-5 rounded-full transition duration-300 ">Download CV</button>
+                  <button class=" text-gray-700 border hover:shadow-md font-poppins font-semibold py-2 px-5 rounded-full transition duration-300 "><a href="#contact">Contact Me</a></button>
                 </div>
             </div>
         </div>

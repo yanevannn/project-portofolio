@@ -6,6 +6,7 @@ import Hero from './components/Hero.vue'
 import Posts from './components/Post.vue'
 import Contact from './components/Contact.vue';
 import MyFooter from './components/Footer.vue'
+import Project from './components/Project.vue';
 </script>
 
 <template>
@@ -13,7 +14,7 @@ import MyFooter from './components/Footer.vue'
   <Navbar />
   <Hero />
   <About />
-  <Posts/>
+  <Project />
   <Contact />
   <MyFooter />
 </template>

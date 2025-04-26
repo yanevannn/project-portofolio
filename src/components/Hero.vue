@@ -8,6 +8,11 @@ import mySQL from '@/assets/img/mysql.svg';
 import vscode from '@/assets/img/vscode.svg';
 import avatar from '@/assets/profile/yanevannn.png';
 import gcp from '@/assets/img/gcp.svg';
+import vue from '@/assets/img/vue.svg';
+import bootstrap from '@/assets/img/bootstrap.svg';
+import postgresql from '@/assets/img/postgresql.svg';
+import github from '@/assets/img/github.svg';
+import js from '@/assets/img/js.svg';
 import Typed from 'typed.js';
 import { onMounted, ref } from 'vue';
 
@@ -44,12 +49,17 @@ onMounted(() => {
           <div class="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
             <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="laravel" alt="Laravel" />
             <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="tailwindcss" alt="Tailwind CSS" />
+            <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="bootstrap" alt="Bootstrap CSS" />
             <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="nginx" alt="Nginx" />
             <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="gcp" alt="Google Cloud Platform" />
             <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="nodejs" alt="Node.js" />
+            <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="js" alt="Javascript" />
             <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="mySQL" alt="MySQL" />
+            <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="postgresql" alt="postgreSQL" />
             <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="git" alt="Git" />
+            <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="github" alt="Github" />
             <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="vscode" alt="VS Code" />
+            <img class="h-8 sm:h-10 transition-transform duration-300 hover:scale-110" :src="vue" alt="VueJs" />
           </div>
         </div>
       </div>

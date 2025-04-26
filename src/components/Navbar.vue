@@ -10,17 +10,17 @@ const toggleMenu = () => isMenuOpen.value = !isMenuOpen.value;
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <!-- Logo -->
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img :src="ELogo" class="h-8" alt="Flowbite Logo" />
+        <!-- <img :src="ELogo" class="h-8" alt="Flowbite Logo" /> -->
         <span class="self-center text-2xl font-semibold whitespace-nowrap font-poppins">Evan</span>
       </a>
 
       <!-- Menu untuk Desktop -->
       <ul class="hidden md:flex space-x-6 font-medium font-poppins">
-        <li><a href="#" class="text-gray-900 hover:text-blue-700">Home</a></li>
-        <li><a href="#" class="text-gray-900 hover:text-blue-700">About</a></li>
-        <li><a href="#" class="text-gray-900 hover:text-blue-700">Project</a></li>
-        <li><a href="#" class="text-gray-900 hover:text-blue-700">Services</a></li>
-        <li><a href="#" class="text-gray-900 hover:text-blue-700">Contact</a></li>
+        <li><a href="#home" class="text-gray-900 hover:text-gray-700 hover:underline hover:underline-offset-2 hover:shadow-md ">Home</a></li>
+        <li><a href="#about" class="text-gray-900 hover:text-gray-700 hover:underline hover:underline-offset-2 hover:shadow-md">About</a></li>
+        <li><a href="#project" class="text-gray-900 hover:text-gray-700 hover:underline hover:underline-offset-2 hover:shadow-md">Project</a></li>
+        <!-- <li><a href="#" class="text-gray-900 hover:text-blue-700">Services</a></li> -->
+        <li><a href="#contact" class="text-gray-900 hover:text-gray-700 hover:underline hover:underline-offset-2 hover:shadow-md">Contact</a></li>
       </ul>
 
       <!-- Tombol Hamburger (Hanya muncul di Mobile) -->
@@ -35,11 +35,11 @@ const toggleMenu = () => isMenuOpen.value = !isMenuOpen.value;
       <transition name="menu">
         <div v-if="isMenuOpen" class="absolute top-full left-0 w-full bg-white shadow-md z-50 md:hidden">
           <ul class="font-medium flex flex-col p-4 border border-gray-100 rounded-lg bg-gray-50">
-            <li><a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm">Home</a></li>
-            <li><a href="#" class="block py-2 px-3 text-gray-900 hover:bg-gray-100">About</a></li>
-            <li><a href="#" class="block py-2 px-3 text-gray-900 hover:bg-gray-100">Project</a></li>
-            <li><a href="#" class="block py-2 px-3 text-gray-900 hover:bg-gray-100">Services</a></li>
-            <li><a href="#" class="block py-2 px-3 text-gray-900 hover:bg-gray-100">Contact</a></li>
+            <li><a href="#about" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 rounded-sm">Home</a></li>
+            <li><a href="#about" class="block py-2 px-3 text-gray-900 hover:bg-gray-100">About</a></li>
+            <li><a href="#project" class="block py-2 px-3 text-gray-900 hover:bg-gray-100">Project</a></li>
+            <!-- <li><a href="#" class="block py-2 px-3 text-gray-900 hover:bg-gray-100">Services</a></li> -->
+            <li><a href="#contact" class="block py-2 px-3 text-gray-900 hover:bg-gray-100">Contact</a></li>
           </ul>
         </div>
       </transition>
